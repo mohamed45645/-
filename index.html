@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="منصة خدمة هاب - أفضل منصة للعاملين بالقطاع الحر في مصر">
+    <meta name="keywords" content="عمل حر، توظيف، مصر، freelance">
     <title>Khadma Hub - أفضل العاملين بالقطاع الحر في مصر</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <span class="logo-khadma">KHADMA</span>
-                <span class="logo-hub">HUB</span>
+                <a href="index.html" style="text-decoration: none;"><span class="logo-khadma">KHADMA</span><span class="logo-hub">HUB</span></a>
             </div>
             <nav class="nav">
-                <a href="#services" class="nav-link">الخدمات <span class="dropdown-icon">▼</span></a>
+                <a href="offers-board.html" class="nav-link">الطلبات</a>
+                <a href="my-offers.html" class="nav-link">عروضي</a>
                 <a href="#about" class="nav-link">حول</a>
-                <a href="#offers" class="nav-link">عروضي</a>
-                <a href="#" class="nav-link">AR</a>
+                <a href="login.html" class="nav-link">دخول</a>
+                <a href="#" class="nav-link" onclick="toggleLanguage(event)">🌐 EN</a>
             </nav>
             <div class="header-icons">
-                <span class="icon">💬</span>
-                <span class="icon">🔔</span>
-                <button class="profile-btn">👤</button>
+                <span class="icon" onclick="window.location.href='messages.html'" title="الرسائل" style="cursor: pointer;">💬</span>
+                <span class="icon" onclick="window.location.href='notifications.html'" title="الإشعارات" style="cursor: pointer;">🔔</span>
+                <button class="profile-btn" onclick="window.location.href='profile.html'" title="الملف الشخصي">👤</button>
             </div>
         </div>
     </header>
@@ -44,25 +45,25 @@
         <aside class="sidebar">
             <div class="section-title">الخدمات</div>
             <ul class="services-list">
-                <li><span class="icon">💻</span> المطورين</li>
-                <li><span class="icon">🎨</span> المصممين</li>
-                <li><span class="icon">🎬</span> إنتاج الوسائط</li>
-                <li><span class="icon">🌐</span> المترجمين</li>
-                <li><span class="icon">✍️</span> الكتابة</li>
-                <li><span class="icon">📱</span> التسويق الرقمي</li>
-                <li><span class="icon">📊</span> التسويق</li>
-                <li><span class="icon">💼</span> المبيعات</li>
-                <li><span class="icon">📚</span> التدريب</li>
-                <li><span class="icon">💰</span> التمويل</li>
-                <li><span class="icon">🏢</span> الأعمال</li>
-                <li><span class="icon">⚙️</span> المهندسين</li>
+                <li><a href="pages/developers.html"><span class="icon">💻</span> المطورين</a></li>
+                <li><a href="pages/designers.html"><span class="icon">🎨</span> المصممين</a></li>
+                <li><a href="pages/media.html"><span class="icon">🎬</span> إنتاج الوسائط</a></li>
+                <li><a href="pages/translators.html"><span class="icon">🌐</span> المترجمين</a></li>
+                <li><a href="pages/writing.html"><span class="icon">✍️</span> الكتابة</a></li>
+                <li><a href="pages/digital-marketing.html"><span class="icon">📱</span> التسويق الرقمي</a></li>
+                <li><a href="pages/marketing.html"><span class="icon">📊</span> التسويق</a></li>
+                <li><a href="pages/sales.html"><span class="icon">💼</span> المبيعات</a></li>
+                <li><a href="pages/training.html"><span class="icon">📚</span> التدريب</a></li>
+                <li><a href="pages/finance.html"><span class="icon">💰</span> التمويل</a></li>
+                <li><a href="pages/business.html"><span class="icon">🏢</span> الأعمال</a></li>
+                <li><a href="pages/engineers.html"><span class="icon">⚙️</span> المهندسين</a></li>
             </ul>
 
             <div class="section-title">مستوى الخبرة</div>
             <ul class="experience-list">
-                <li>مستوى الدخول</li>
-                <li>المستوى المهني</li>
-                <li>المستوى الخبير</li>
+                <li><a href="pages/level-entry.html">مستوى الدخول</a></li>
+                <li><a href="pages/level-professional.html">المستوى المهني</a></li>
+                <li><a href="pages/level-expert.html">المستوى الخبير</a></li>
             </ul>
         </aside>
 
@@ -77,116 +78,145 @@
             <!-- Freelancers Grid -->
             <div class="freelancers-grid">
                 <div class="freelancer-card">
-                    <div class="profile-image"></div>
-                    <h3>omnia salah</h3>
-                    <p class="title">ui/ux designer</p>
+                    <div class="profile-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="star-rating">⭐⭐⭐⭐⭐ (4.9)</div>
+                    <h3>Omnia Salah</h3>
+                    <p class="title">UI/UX Designer</p>
                     <div class="rate">
-                        <span class="label">HourlyRate</span>
-                        <span class="price">350/EG</span>
+                        <span class="label">Hourly Rate</span>
+                        <span class="price">350 EG</span>
                     </div>
                     <div class="skills">
-                        <span class="skill-badge">UI</span>
-                        <span class="skill-badge">UX</span>
-                        <span class="skill-badge">FIGMA</span>
+                        <span class="skill-badge">UI Design</span>
+                        <span class="skill-badge">UX Design</span>
+                        <span class="skill-badge">Figma</span>
                     </div>
-                    <button class="profile-link">Profile</button>
+                    <button class="profile-link">View Profile</button>
                 </div>
 
                 <div class="freelancer-card">
-                    <div class="profile-image"></div>
-                    <h3>omnia salah</h3>
-                    <p class="title">ui/ux designer</p>
+                    <div class="profile-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="star-rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <h3>Ahmed Hassan</h3>
+                    <p class="title">Full Stack Developer</p>
                     <div class="rate">
-                        <span class="label">HourlyRate</span>
-                        <span class="price">350/EG</span>
+                        <span class="label">Hourly Rate</span>
+                        <span class="price">450 EG</span>
                     </div>
                     <div class="skills">
-                        <span class="skill-badge">UI</span>
-                        <span class="skill-badge">UX</span>
-                        <span class="skill-badge">FIGMA</span>
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">MongoDB</span>
                     </div>
-                    <button class="profile-link">Profile</button>
+                    <button class="profile-link">View Profile</button>
                 </div>
 
                 <div class="freelancer-card">
-                    <div class="profile-image"></div>
-                    <h3>omnia salah</h3>
-                    <p class="title">ui/ux designer</p>
+                    <div class="profile-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="star-rating">⭐⭐⭐⭐ (4.8)</div>
+                    <h3>Sara Mohamed</h3>
+                    <p class="title">Content Writer</p>
                     <div class="rate">
-                        <span class="label">HourlyRate</span>
-                        <span class="price">350/EG</span>
+                        <span class="label">Hourly Rate</span>
+                        <span class="price">200 EG</span>
                     </div>
                     <div class="skills">
-                        <span class="skill-badge">UI</span>
-                        <span class="skill-badge">UX</span>
-                        <span class="skill-badge">FIGMA</span>
+                        <span class="skill-badge">Arabic Writing</span>
+                        <span class="skill-badge">SEO</span>
+                        <span class="skill-badge">Copywriting</span>
                     </div>
-                    <button class="profile-link">Profile</button>
+                    <button class="profile-link">View Profile</button>
                 </div>
 
                 <div class="freelancer-card">
-                    <div class="profile-image"></div>
-                    <h3>omnia salah</h3>
-                    <p class="title">ui/ux designer</p>
+                    <div class="profile-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="star-rating">⭐⭐⭐⭐⭐ (4.9)</div>
+                    <h3>Mohammed Ali</h3>
+                    <p class="title">Digital Marketing</p>
                     <div class="rate">
-                        <span class="label">HourlyRate</span>
-                        <span class="price">350/EG</span>
+                        <span class="label">Hourly Rate</span>
+                        <span class="price">300 EG</span>
                     </div>
                     <div class="skills">
-                        <span class="skill-badge">UI</span>
-                        <span class="skill-badge">UX</span>
-                        <span class="skill-badge">FIGMA</span>
+                        <span class="skill-badge">Social Media</span>
+                        <span class="skill-badge">Google Ads</span>
+                        <span class="skill-badge">Analytics</span>
                     </div>
-                    <button class="profile-link">Profile</button>
+                    <button class="profile-link">View Profile</button>
                 </div>
 
                 <div class="freelancer-card">
-                    <div class="profile-image"></div>
-                    <h3>omnia salah</h3>
-                    <p class="title">ui/ux designer</p>
+                    <div class="profile-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="star-rating">⭐⭐⭐⭐ (4.7)</div>
+                    <h3>Noor Ahmed</h3>
+                    <p class="title">Graphic Designer</p>
                     <div class="rate">
-                        <span class="label">HourlyRate</span>
-                        <span class="price">350/EG</span>
+                        <span class="label">Hourly Rate</span>
+                        <span class="price">280 EG</span>
                     </div>
                     <div class="skills">
-                        <span class="skill-badge">UI</span>
-                        <span class="skill-badge">UX</span>
-                        <span class="skill-badge">FIGMA</span>
+                        <span class="skill-badge">Adobe Creative</span>
+                        <span class="skill-badge">Branding</span>
+                        <span class="skill-badge">Illustration</span>
                     </div>
-                    <button class="profile-link">Profile</button>
+                    <button class="profile-link">View Profile</button>
                 </div>
 
                 <div class="freelancer-card">
-                    <div class="profile-image"></div>
-                    <h3>omnia salah</h3>
-                    <p class="title">ui/ux designer</p>
+                    <div class="profile-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"></div>
+                    <div class="star-rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <h3>Yasmin Karim</h3>
+                    <p class="title">Video Editor</p>
                     <div class="rate">
-                        <span class="label">HourlyRate</span>
-                        <span class="price">350/EG</span>
+                        <span class="label">Hourly Rate</span>
+                        <span class="price">400 EG</span>
                     </div>
                     <div class="skills">
-                        <span class="skill-badge">UI</span>
-                        <span class="skill-badge">UX</span>
-                        <span class="skill-badge">FIGMA</span>
+                        <span class="skill-badge">Premiere Pro</span>
+                        <span class="skill-badge">After Effects</span>
+                        <span class="skill-badge">Motion Graphics</span>
                     </div>
-                    <button class="profile-link">Profile</button>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
+                    <button class="profile-link">View Profile</button>
+                </div> id="footer">
         <div class="footer-content">
             <div class="footer-column">
-                <h3>Heading</h3>
-                <p>Lorem ipsum</p>
-                <p>Lorem ipsum</p>
+                <h3>عن خدمة هاب</h3>
+                <p><a href="#">كيفية الاستخدام</a></p>
+                <p><a href="#">سياسة الخصوصية</a></p>
+                <p><a href="#">شروط الخدمة</a></p>
             </div>
             <div class="footer-column">
-                <h3>Sub-Heading</h3>
-                <p>Lorem ipsum</p>
-                <p>Lorem ipsum</p>
+                <h3>للعاملين</h3>
+                <p><a href="#">إنشاء حساب</a></p>
+                <p><a href="#">البحث عن العروض</a></p>
+                <p><a href="#">إدارة الملف الشخصي</a></p>
+                <p><a href="#">الدعم الفني</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>للعملاء</h3>
+                <p><a href="#">نشر مشروع</a></p>
+                <p><a href="#">البحث عن العاملين</a></p>
+                <p><a href="#">الدفع والفواتير</a></p>
+                <p><a href="#">الأسئلة الشائعة</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>تواصل معنا</h3>
+                <div class="footer-icons">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Twitter">𝕱</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="LinkedIn">in</a>
+                </div>
+                <div class="footer-button-box">
+                    <button class="footer-button" onclick="subscribeNewsletter()">اشترك في النشرة</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Khadma Hub. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script    <p>Lorem ipsum</p>
                 <p>Lorem ipsum</p>
             </div>
             <div class="footer-column">
